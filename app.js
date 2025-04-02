@@ -101,7 +101,7 @@ function moveBall() {// call into start game to begin.
 }
 //////////////////////////////////////////////////////////////////////////////////////end
 
-// fUNCTIONS - UPDATE THE SCORES, RESET THE BALLS POSITION 
+// FUNCTIONS - UPDATE THE SCORES, RESET THE BALLS POSITION 
 
 // Update the displayed scoreboard
 function updateScore() {
