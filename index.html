@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pong Game with Music</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Protest+Strike&family=Sancreek&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <h1>Lets Play Pong!</h1>
+    </header>
+    <section id="game__area">
+      <div id="left__paddle" class="paddle"></div>
+      <div id="right__paddle" class="paddle"></div>
+      <img id="ball" src="robot_ball.png" alt="Ball" />
+    </section>
+    <!--Controls & scores -->
+    <section class="all__content__bottom">
+      <!--Parent Element-->
+      <section id="game__controls__right">
+        <div id="content__wrapper__right">
+          <div id="text__content__right">
+            <!-- Scoreboard Section -->
+            <section id="score__board">
+              <p id="player__score">Gamer: 0</p>
+              <p id="computer__score">Computer: 0</p>
+            </section>
+
+            <!-- Control Buttons for the Game Section -->
+            <section id="controls">
+              <button id="start__button">Start Game</button>
+              <button id="end__button" disabled>End Game</button>
+            </section>
+          </div>
+        </div>
+      </section>
+      <section id="game__controls__left">
+        <div id="content__wrapper__left">
+          <div id="text__content__left">
+            <h2>Control Board</h2>
+            <!--Selection Menu-->
+            <div id="select__ball">
+              <h6>Select Ball</h6>
+              <select name="imageSprite" id="image__sprite">
+                <option value="robot_ball.png">Robot</option>
+                <option value="lightning_bolt_ball.png">Lightning Bolt</option>
+                <option value="monster_ball.png">Monster</option>
+                <option value="eyeBall.png">Eye Ball</option>
+                <option value="dragon_ball.png">Dragon</option>
+                <option value="caden_ball.png">Caden</option>
+              </select>
+            </div>
+            <!--Toggle Menu (Note that checked is a built in quality of the checkbox true false boolean)-->
+            <div id="toggle__switch">
+              <h6>Change Canvas</h6>
+              <label class="switch">
+                <input type="checkbox" />
+                <span class="slider"></span>
+              </label>
+            </div>
+          </div>
+        </div>
+      </section>
+    </section>
+    <!-- Added Audio -->
+    <section id="audio__section">
+      <audio id="game__music" src="gameMusic.mp3" preload="auto"></audio>
+    </section>
+    <footer></footer>
+    <script src="app.js"></script>
+  </body>
+</html>
